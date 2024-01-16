@@ -69,6 +69,7 @@ ul li{
   margin: 10px 0;
   padding: 11px 8px 11px 50px;
   user-select: none;
+  word-break: break-all;
   cursor: pointer;
   animation: anime 0.2s linear;
   position: relative;
