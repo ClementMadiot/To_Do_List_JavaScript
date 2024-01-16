@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+:rout {
+  --blue:#4285f4;
+  --gray:#b3b2b2;
+  --purpel-gradient: linear-gradient(135deg, #153677, #4e085f);
+  --title-h1: #002765;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -6,7 +13,7 @@
   font-family: 'Roboto', sans-serif;
 }
 body {
-  background-color: #4285f4;
+  background: linear-gradient(135deg, #153677, #4e085f);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,6 +30,7 @@ section{
 h1 {
   text-align: center;
   margin-bottom: 10px;
+  color: var(--title-h1)
 }
 .full_input {
   display: flex;
@@ -56,9 +64,19 @@ button {
   word-break: break-all;
   cursor: pointer;
   animation: anime 0.5s linear;
+  position: relative;
 }
 .paragraph_style:last-child{
   margin-bottom: 0;
+}
+.paragraph_style::before{
+content: '';;
+position: absolute;
+height: 28px;
+width: 28px;
+border-radius: 50%;
+background-size: cover;
+background-position: center;
 }
 @keyframes anime {
   from {

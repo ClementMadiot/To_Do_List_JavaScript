@@ -21,7 +21,7 @@ addToDoButton.onclick = function(){
 
   //* Barré le paragraph au click
   paragraph.addEventListener('click',function(){
-    paragraph.classList.add('paragraph_click')
+    paragraph.classList.toggle('paragraph_click')
   })
 
   //* Supprimer tâche au double click
