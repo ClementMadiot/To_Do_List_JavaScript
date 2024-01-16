@@ -30,7 +30,7 @@ section{
 h1 {
   text-align: center;
   margin-bottom: 10px;
-  color: var(--title-h1)
+  color: var(--title-h1);
 }
 .full_input {
   display: flex;
@@ -54,6 +54,7 @@ button {
   color: #fff;
   border-radius: 0 6px 6px 0;
 }
+
 .paragraph_style {
   margin: 10px 0;
   padding: 10px 0;
@@ -68,15 +69,6 @@ button {
 }
 .paragraph_style:last-child{
   margin-bottom: 0;
-}
-.paragraph_style::before{
-content: '';;
-position: absolute;
-height: 28px;
-width: 28px;
-border-radius: 50%;
-background-size: cover;
-background-position: center;
 }
 @keyframes anime {
   from {
